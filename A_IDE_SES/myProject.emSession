@@ -1,0 +1,54 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="myproject"/>
+  <ProjectSessionItem path="myproject;myProject"/>
+  <ProjectSessionItem path="myproject;myProject;Application"/>
+  <ProjectSessionItem path="myproject;myProject;Board Definition"/>
+  <ProjectSessionItem path="myproject;myProject;nRF5_SDK"/>
+  <ProjectSessionItem path="myproject;myProject;nRF5_SDK;nRF_Drivers"/>
+  <ProjectSessionItem path="myproject;myProject;nRF5_SDK;nRF_Libraries"/>
+  <ProjectSessionItem path="myproject;myProject;Segger Startup Files"/>
+  <ProjectSessionItem path="myproject;myProject;System Files"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="15" useTextEdit="1" useBinaryEdit="0" left="0" path="../A_SRC/main.c" selected="1" top="3" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="12" useTextEdit="1" useBinaryEdit="0" left="0" path="../nRF5_SDK/sdk_config.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="42" useTextEdit="1" useBinaryEdit="0" left="0" path="../nRF5_SDK/modules/nrfx/drivers/src/nrfx_power_clock.c" selected="0" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="240" useTextEdit="1" useBinaryEdit="0" left="0" path="../nRF5_SDK/integration/nrfx/legacy/nrf_drv_clock.c" selected="0" top="217" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="186" useTextEdit="1" useBinaryEdit="0" left="0" path="../nRF5_SDK/components/libraries/util/app_util_platform.h" selected="0" top="163" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="myProject" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/WORK_MultiNRF5/myProject/nRF5_SDK/components/libraries/fifo" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

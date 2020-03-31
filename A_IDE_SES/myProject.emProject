@@ -1,0 +1,121 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="myproject" target="8" version="2">
+  <project Name="myProject">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="8192"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="8192"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_simulator_memory_simulation_parameter="RWX 00000000,00100000,FFFFFFFF;RWX 20000000,00010000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="BOARD_PCA10059;BSP_DEFINES_ONLY;CONFIG_GPIO_AS_PINRESET;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;"
+      c_user_include_directories="../A_SRC;../nRF5_SDK;../nRF5_SDK/components;../nRF5_SDK/components/boards;../nRF5_SDK/components/drivers_nrf/nrf_soc_nosd;../nRF5_SDK/components/drivers_nrf/usbd;../nRF5_SDK/components/libraries/atomic;../nRF5_SDK/components/libraries/atomic_fifo;../nRF5_SDK/components/libraries/balloc;../nRF5_SDK/components/libraries/bsp;../nRF5_SDK/components/libraries/cli;../nRF5_SDK/components/libraries/delay;../nRF5_SDK/components/libraries/experimental_section_vars;../nRF5_SDK/components/libraries/log;../nRF5_SDK/components/libraries/log/src;../nRF5_SDK/components/libraries/memobj;../nRF5_SDK/components/libraries/mutex;../nRF5_SDK/components/libraries/queue;../nRF5_SDK/components/libraries/ringbuf;../nRF5_SDK/components/libraries/strerror;../nRF5_SDK/components/libraries/timer;../nRF5_SDK/components/libraries/util;../nRF5_SDK/components/libraries/usbd;../nRF5_SDK/components/libraries/usbd/class/cdc;../nRF5_SDK/components/libraries/usbd/class/cdc/acm;../nRF5_SDK/components/softdevice/mbr/nrf52840/headers;../nRF5_SDK/components/toolchain/cmsis/include;../nRF5_SDK/external/fprintf;../nRF5_SDK/external/utf_converter;../nRF5_SDK/integration/nrfx;../nRF5_SDK/integration/nrfx/legacy;../nRF5_SDK/modules/nrfx;../nRF5_SDK/modules/nrfx/drivers/include;../nRF5_SDK/modules/nrfx/hal;../nRF5_SDK/modules/nrfx/mdk;../nRF5_SDK/components/drivers_nrf/radio_config"
+      debug_additional_load_file="../../../../../../components/softdevice/mbr/nrf52840/hex/mbr_nrf52_2.3.0_mbr.hex"
+      debug_register_definition_file="../../../../../../modules/nrfx/mdk/nrf52840.svd"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      gcc_debugging_level="Level 3"
+      gcc_entry_point="Reset_Handler"
+      linker_output_format="hex"
+      linker_printf_fmt_level="long"
+      linker_printf_width_precision_supported="Yes"
+      linker_section_placement_file="flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x100000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x40000;FLASH_START=0x1000;FLASH_SIZE=0xff000;RAM_START=0x20000008;RAM_SIZE=0x3fff8"
+      linker_section_placements_segments="FLASH RX 0x0 0x100000;RAM RWX 0x20000000 0x40000"
+      macros="CMSIS_CONFIG_TOOL=../nRF5_SDK/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Segger Startup Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
+    </folder>
+    <folder Name="Application">
+      <file file_name="../A_SRC/main.c" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="../nRF5_SDK/components/boards/boards.c">
+        <configuration Name="Debug" build_exclude_from_build="No" />
+        <configuration Name="Release" build_exclude_from_build="No" />
+      </file>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="../nRF5_SDK/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="../nRF5_SDK/modules/nrfx/mdk/ses_startup_nrf52840.s" />
+      <file file_name="../nRF5_SDK/modules/nrfx/mdk/system_nrf52840.c" />
+    </folder>
+    <folder Name="nRF5_SDK">
+      <folder Name="nRF_Libraries">
+        <file file_name="../nRF5_SDK/components/libraries/util/nrf_assert.c" />
+        <file file_name="../nRF5_SDK/components/libraries/util/app_error_weak.c" />
+        <file file_name="../nRF5_SDK/components/libraries/util/app_error.c" />
+        <file file_name="../nRF5_SDK/components/libraries/util/app_util_platform.c" />
+        <file file_name="../nRF5_SDK/components/libraries/usbd/app_usbd.c" />
+        <file file_name="../nRF5_SDK/components/libraries/usbd/app_usbd_core.c" />
+        <file file_name="../nRF5_SDK/components/libraries/usbd/app_usbd_serial_num.c" />
+        <file file_name="../nRF5_SDK/components/libraries/usbd/app_usbd_string_desc.c" />
+        <file file_name="../nRF5_SDK/components/libraries/atomic/nrf_atomic.c">
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/atomic_fifo/nrf_atfifo.c">
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/usbd/class/cdc/acm/app_usbd_cdc_acm.c" />
+        <file file_name="../nRF5_SDK/components/libraries/timer/app_timer.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/pwr_mgmt/nrf_pwr_mgmt.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/queue/nrf_queue.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/ringbuf/nrf_ringbuf.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/balloc/nrf_balloc.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/libraries/fifo/app_fifo.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+      </folder>
+      <file file_name="../nRF5_SDK/sdk_config.h" />
+      <folder Name="nRF_Log" />
+      <folder Name="nRF_Drivers">
+        <file file_name="../nRF5_SDK/modules/nrfx/drivers/src/nrfx_systick.c" />
+        <file file_name="../nRF5_SDK/integration/nrfx/legacy/nrf_drv_clock.c" />
+        <file file_name="../nRF5_SDK/modules/nrfx/drivers/src/nrfx_clock.c" />
+        <file file_name="../nRF5_SDK/components/drivers_nrf/usbd/nrf_drv_usbd.c" />
+        <file file_name="../nRF5_SDK/integration/nrfx/legacy/nrf_drv_power.c" />
+        <file file_name="../nRF5_SDK/modules/nrfx/drivers/src/nrfx_power.c" />
+        <file file_name="../nRF5_SDK/modules/nrfx/drivers/src/nrfx_power_clock.c">
+          <configuration Name="Release" build_exclude_from_build="No" />
+        </file>
+        <file file_name="../nRF5_SDK/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/modules/nrfx/drivers/src/prs/nrfx_prs.c">
+          <configuration Name="Release" build_exclude_from_build="Yes" />
+        </file>
+        <file file_name="../nRF5_SDK/components/drivers_nrf/radio_config/radio_config.c" />
+      </folder>
+    </folder>
+  </project>
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_optimization_level="Optimize For Size" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG; DEBUG_NRF"
+    gcc_optimization_level="None" />
+</solution>
